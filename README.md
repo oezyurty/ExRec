@@ -85,7 +85,7 @@ python get_step_by_step_solutions.py --original_question_file ../data/XES3G5M/me
 python get_kc_annotations_and_mapping.py --original_question_file ../data/XES3G5M/metadata/questions_translated_kc_annotated.json --annotated_question_file ../data/XES3G5M/metadata/questions_translated_kc_sol_annotated_mapped.json
 ```
 
-***Skip this step*** if you reuse our pre‑computed file  
+***Skip above step*** if you reuse our pre‑computed file  
 `data/XES3G5M/metadata/questions_translated_kc_sol_annotated_mapped.json`.
 
 ### Module 2 – Representation Learning
@@ -100,8 +100,17 @@ Note that the above command requires you to setup your wandb account first.
 
 After training, you can save the embeddings by following [save_embeddings.ipynb](representation_learning/save_embeddings.ipynb).
 
-***Skip this step*** if you reuse our pre‑computed file  
-`data/XES3G5M_embeddings/qid2content_sol_avg_emb.json` and `data/XES3G5M_embeddings/kc_emb.json` .
+***Skip above step*** if you would like to reuse our pre‑computed embeddings:
+
+Due to GitHub’s file size limits, we split the original qid2content_sol_avg_emb.json into two smaller files: `data/XES3G5M_embeddings/part1_qid2content_sol_avg_emb.json` and `data/XES3G5M_embeddings/part2_qid2content_sol_avg_emb.json` .
+
+To reconstruct the full embeddings file, simply run:
+
+```bash
+python data/XES3G5M_embeddings/reconstruct_embeddings.py
+```
+
+This will create `qid2content_sol_avg_emb.json` in the same directory. You may also reuse `data/XES3G5M_embeddings/kc_emb.json` directly, as it is below GitHub’s size threshold.
 
 ### Module 3 – KT Training with KC Calibration 
 As explained in the paper, we first train the KT model with the performance prediction objective.
