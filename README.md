@@ -8,6 +8,18 @@
   <img src="overview.png" width="720" alt="Overview of ExRec">
 </p>
 
+This is the repository of **ExRec**: Personalized Exercise Recommendation with Semantically-Grounded Knowledge Tracing. [[link](https://arxiv.org/abs/2507.11060) to our paper]
+
+**Note:** If you find our work valuable, we kindly ask you to consider citing our work.
+```
+@article{ozyurt2025personalized,
+  title={Personalized Exercise Recommendation with Semantically-Grounded Knowledge Tracing},
+  author={Ozyurt, Yilmazcan and Almaci, Tunaberk and Feuerriegel, Stefan and Sachan, Mrinmaya},
+  journal={arXiv preprint arXiv:2507.11060},
+  year={2025}
+}
+```
+
 ---
 
 ## Table of Contents
