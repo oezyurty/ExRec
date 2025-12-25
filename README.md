@@ -1,6 +1,6 @@
 
 
-# ExRec – Personalized Exercise Recommendation with Semantically-Grounded Knowledge Tracing
+# ExRec – Personalized Exercise Recommendation with Semantically-Grounded Knowledge Tracing (NeurIPS 2025)
 
 > **TL;DR.** ExRec turns a calibrated Knowledge‑Tracing (KT) model into a fully fledged RL environment and learns exercise‑recommendation policies that *directly optimise students’ knowledge gains*.
 
@@ -15,7 +15,7 @@ This is the repository of **ExRec**: Personalized Exercise Recommendation with S
 @article{ozyurt2025personalized,
   title={Personalized Exercise Recommendation with Semantically-Grounded Knowledge Tracing},
   author={Ozyurt, Yilmazcan and Almaci, Tunaberk and Feuerriegel, Stefan and Sachan, Mrinmaya},
-  journal={arXiv preprint arXiv:2507.11060},
+  journal={NeurIPS},
   year={2025}
 }
 ```
